@@ -10,7 +10,7 @@ float readvalue(char i) //function 1
 float computevol(float b, float d, float h) //function 2
 {
 	float vol;
-vol= ((h*d)+d)/(3*b);
+	vol= ((h*d)+d)/(3*b);
 	return vol;
 }
 void displayvol(float vol) //function 3
