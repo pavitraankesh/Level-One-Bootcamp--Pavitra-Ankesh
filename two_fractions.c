@@ -16,9 +16,14 @@ fraction read_values(int n)
 }
 int get_gcd(int a, int b)
 {
-	if(a==0)
-		return b;
-	return get_gcd(b%a,a);
+    int temp;
+	while (a!=0)
+	{
+	    temp=a;
+	    a=b%a;
+	    b=temp;
+	}
+	return b;
 }
 fraction simplify(fraction sum)
 {
@@ -48,4 +53,3 @@ int main()
 	display_sum(f1,f2,sum);
 	return 0;
 }
-
