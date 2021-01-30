@@ -12,7 +12,7 @@ int get_n()
     	  scanf("%d",&n);
     	  return n;
 }
-void get_fractions(fraction array[n], int n)
+void get_fractions(fraction array[], int n)
 {
 	  fraction x;
 	  for(int i=0;i<n;i++)
@@ -51,21 +51,22 @@ fraction compute_sum_of_two( fraction f1, fraction f2)
 	  sum=simplify(sum);
 	  return sum;
 }
-fraction compute_total_sum(fraction array[n], int n)
+fraction compute_total_sum(fraction array[], int n)
 {
-	  fraction sum=0;
-	  for(int i=0;i<n;i++)
+	  fraction sum;
+	  sum=array[0];
+	  for(int i=1;i<n;i++)
 	  {
 		    sum=compute_sum_of_two(sum, array[i]);
 	  }
 	  return sum;
 }
-void display_sum(fraction array[n], int n, fraction sum)
+void display_sum(fraction array[], int n, fraction sum)
 {
 	printf("The sum ");
 	for(int i=0;i<n-1;i++)
 	{
-		printf("%d/%d + ",array[i].n,array[i].d);
+		 printf("%d/%d + ",array[i].n,array[i].d);
 	}
 	printf("%d/%d is: %d/%d.\n", array[n-1].n, array[n-1].d, sum.n, sum.d);
 }
@@ -79,3 +80,4 @@ int main()
 	  display_sum(array,n,sum);
 	  return 0;
 }
+
