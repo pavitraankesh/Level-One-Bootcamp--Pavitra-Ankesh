@@ -9,8 +9,8 @@ int get_n()
 {
 	  int n;
 	  printf("Enter the number of fractions n to be added: \n");
-    scanf("%d",&n);
-    return n;
+    	  scanf("%d",&n);
+    	  return n;
 }
 void get_fractions(fraction array[n], int n)
 {
@@ -62,9 +62,9 @@ fraction compute_total_sum(fraction array[n], int n)
 }
 int main()
 {
-    int n;
-    n=get_n();
-    fraction array[n], sum;
+    	  int n;
+    	  n=get_n();
+    	  fraction array[n], sum;
 	  get_fractions(array, n);
 	  sum=compute_total_sum(array, n);
 	  return 0;
