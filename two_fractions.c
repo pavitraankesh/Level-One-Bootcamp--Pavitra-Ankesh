@@ -16,12 +16,12 @@ fraction read_values(int n)
 }
 int get_gcd(int a, int b)
 {
-    int temp;
+    	int temp;
 	while (a!=0)
 	{
-	    temp=a;
-	    a=b%a;
-	    b=temp;
+	    	temp=a;
+	    	a=b%a;
+	    	b=temp;
 	}
 	return b;
 }
@@ -34,10 +34,10 @@ fraction simplify(fraction sum)
 }
 fraction compute_sum(fraction f1, fraction f2)
 {
-    fraction sum;
-    sum.n=(f1.n*f2.d)+(f2.n*f1.d);
-    sum.d=f1.d*f2.d;
-    return sum;
+    	fraction sum;
+    	sum.n=(f1.n*f2.d)+(f2.n*f1.d);
+    	sum.d=f1.d*f2.d;
+    	return sum;
 }
 void display_sum(fraction f1, fraction f2, fraction sum)
 {
