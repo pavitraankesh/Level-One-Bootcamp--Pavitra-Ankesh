@@ -60,6 +60,15 @@ fraction compute_total_sum(fraction array[n], int n)
 	  }
 	  return sum;
 }
+void display_sum(fraction array[n], int n, fraction sum)
+{
+	printf("The sum ");
+	for(int i=0;i<n-1;i++)
+	{
+		printf("%d/%d + ",array.n[i],array.d[i]);
+	}
+	printf("%d/%d is: %d,%d.\n", array.n[n-1], array.d[n-1], sum.n, sum.d);
+}
 int main()
 {
     	  int n;
@@ -67,5 +76,6 @@ int main()
     	  fraction array[n], sum;
 	  get_fractions(array, n);
 	  sum=compute_total_sum(array, n);
+	  display_sum(array,n,sum);
 	  return 0;
 }
