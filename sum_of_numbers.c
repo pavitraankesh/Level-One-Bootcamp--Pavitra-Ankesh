@@ -12,7 +12,7 @@ void read_numbers(int n, float array[n])
 	  for(int i=0;i<n;i++)
 	  {
 	    	printf("Enter element %d:\n",i+1);
-		    scanf("%f",&array[i]);
+		scanf("%f",&array[i]);
 	  }
 }
 float compute_sum(int n, float array[n])
@@ -20,7 +20,7 @@ float compute_sum(int n, float array[n])
 	  float sum=0;
 	  for(int i=0;i<n;i++)
 	  {
-		    sum=sum+array[i];
+		sum=sum+array[i];
 	  }
 	  return sum;
 }
@@ -29,7 +29,7 @@ void display_sum(int n, float array[n], float sum)
 	  printf("The sum ");
 	  for(int i=0;i<n-1;i++)
 	  {
-		    printf("%.2f + ", array[i]);
+		 printf("%.2f + ", array[i]);
 	  }
 	  printf("%.2f is: %.2f.\n",array[n-1],sum);
 }
