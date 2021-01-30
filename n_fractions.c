@@ -65,7 +65,7 @@ void display_sum(fraction array[n], int n, fraction sum)
 	printf("The sum ");
 	for(int i=0;i<n-1;i++)
 	{
-		printf("%d/%d + ",array.n[i],array.d[i]);
+		printf("%d/%d + ",array[i].n,array[i].d);
 	}
 	printf("%d/%d is: %d,%d.\n", array.n[n-1], array.d[n-1], sum.n, sum.d);
 }
